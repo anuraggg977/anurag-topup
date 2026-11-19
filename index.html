@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag Topup Center - Fast & Trusted</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#0b1120;color:white;padding:12px;padding-bottom:40px}
+.top{background:#facc15;color:black;text-align:center;padding:10px;border-radius:10px;font-weight:bold;font-size:14px}
+.header{text-align:center;padding:20px 5px}
+.header h1{font-size:28px;color:#facc15;line-height:1.2}
+.header p{color:#cbd5e1;margin-top:8px;font-size:14px}
+.badge{display:inline-block;background:#22c55e;padding:5px 12px;border-radius:20px;font-size:12px;margin-top:10px}
+.box{background:#1e293b;border-radius:15px;padding:15px;margin-top:15px}
+.box h3{margin-bottom:10px;font-size:17px}
+input{width:100%;padding:14px;border-radius:10px;border:2px solid #facc15;background:white;color:black;font-size:16px;outline:none}
+.small{font-size:12px;color:#94a3b8;margin-top:6px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.card{background:white;color:black;border-radius:15px;padding:14px;text-align:center;border:3px solid transparent}
+.card.hot{border-color:#facc15;position:relative}
+.hot-tag{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#ef4444;color:white;font-size:11px;padding:3px 8px;border-radius:10px}
+.card h2{font-size:18px;margin:8px 0 4px}
+.card .dia{font-size:28px}
+.card .price{color:#16a34a;font-weight:bold;font-size:20px;margin:5px 0}
+.card .old{color:#94a3b8;text-decoration:line-through;font-size:13px}
+.card button{background:#22c55e;color:white;border:none;padding:11px;width:100%;border-radius:10px;font-weight:bold;font-size:15px;margin-top:8px}
+.pay{background:#facc15;color:black;border-radius:15px;padding:15px;margin-top:20px;text-align:center}
+.pay h3{font-size:18px}
+.pay p{margin:5px 0;font-weight:bold}
+.wa{background:#25D366;color:white;text-align:center;padding:14px;border-radius:12px;display:block;text-decoration:none;font-weight:bold;font-size:17px;margin-top:15px}
+.footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:20px;line-height:1.6}
+</style>
+</head>
+<body>
+
+<div class="top">⚡ 2 MINUTE MA TOPUP • 24 HOURS OPEN ⚡</div>
+
+<div class="header">
+<h1>🔥 ANURAG<br>TOPUP CENTER 🔥</h1>
+<p>Free Fire • Fast • Safe • Trusted Seller</p>
+<span class="badge">✅ 1000+ Happy Customers</span>
+</div>
+
+<div class="box">
+<h3>👇 STEP 1: Afno Free Fire UID Lekhnus 👇</h3>
+<input id="uid" type="number" placeholder="Ex: 2345678901">
+<p class="small">UID game bhitra profile ma pauchha. UID galat bhaye topup aru lai jancha!</p>
+</div>
+
+<h3 style="margin-top:18px">👇 STEP 2: Package Channus 👇</h3>
+
+<div class="grid">
+<div class="card"><div class="dia">💎</div><h2>100 Diamond</h2><div class="price">Rs. 95</div><button onclick="buy('100 Diamond - Rs.95')">BUY NOW</button></div>
+<div class="card hot"><div class="hot-tag">BEST SELLER</div><div class="dia">💎</div><h2>310 Diamond</h2><div class="old">Rs. 320</div><div class="price">Rs. 280</div><button onclick="buy('310 Diamond - Rs.280')">BUY NOW</button></div>
+<div class="card"><div class="dia">💎</div><h2>520 Diamond</h2><div class="old">Rs. 520</div><div class="price">Rs. 460</div><button onclick="buy('520 Diamond - Rs.460')">BUY NOW</button></div>
+<div class="card"><div class="dia">💎</div><h2>1060 Diamond</h2><div class="old">Rs. 1050</div><div class="price">Rs. 920</div><button onclick="buy('1060 Diamond - Rs.920')">BUY NOW</button></div>
+<div class="card"><div class="dia">💎</div><h2>2180 Diamond</h2><div class="price">Rs. 1850</div><button onclick="buy('2180 Diamond - Rs.1850')">BUY NOW</button></div>
+<div class="card"><div class="dia">👑</div><h2>Weekly Member</h2><div class="price">Rs. 180</div><button onclick="buy('Weekly Membership - Rs.180')">BUY NOW</button></div>
+<div class="card"><div class="dia">👑</div><h2>Monthly Member</h2><div class="price">Rs. 900</div><button onclick="buy('Monthly Membership - Rs.900')">BUY NOW</button></div>
+<div class="card"><div class="dia">🎁</div><h2>Level Up Pass</h2><div class="price">Rs. 150</div><button onclick="buy('Level Up Pass - Rs.150')">BUY NOW</button></div>
+</div>
+
+<div class="pay">
+<h3>💳 PAYMENT METHOD</h3>
+<p>eSewa / Khalti / IME Pay</p>
+<p style="font-size:20px">9819573425</p>
+<p>Naam: Anurag</p>
+<p style="font-size:12px;font-weight:normal">Payment garepachi screenshot WhatsApp ma pathaunus</p>
+</div>
+
+<a class="wa" href="https://wa.me/9779716464872">💬 WhatsApp Ma Message Garne</a>
+
+<div class="footer">
+⭐ 100% Trusted • Paisa fasyo bhane refund huncha<br>
+© 2026 Anurag Topup Center. All Rights Reserved.
+</div>
+
+<script>
+function buy(p){
+let uid=document.getElementById('uid').value;
+if(!uid){alert('Pahila UID lekhnus! 🙏');return;}
+let msg="Hello Anurag! 🙏\nMalai "+p+" chahiyo.\nMero UID: "+uid+"\nPayment gareko screenshot pathauchhu.";
+window.open("https://wa.me/9779819573425?text="+encodeURIComponent(msg));
+}
+</script>
+</body>
+</html>
